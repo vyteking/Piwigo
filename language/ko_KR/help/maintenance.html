@@ -1,26 +1,25 @@
-<h2>Maintenance</h2>
+<h2>유지 보수</h2>
 
-<p>To optimise page generation time Piwigo uses cached information. For example, instead of counting the number of photos contained in each album at each page reload this information is stored in the database. In theory this information should always be correct but sometimes an error can occur and cached information becomes out of date.</p>
+<p>페이지 생성 시간을 최적화하기 위해 Piwigo는 캐시된 정보를 사용합니다. 예를 들어, 각 페이지에서 각 앨범에 포함된 사진 수를 계산하는 대신 이 정보는 데이터베이스에 저장됩니다. 이론적으로 이 정보는 항상 정확해야 하지만 때로는 오류가 발생하고 캐시된 정보가 최신 정보가 아닌 경우가 있습니다.</p>
 
-<p>Some information becomes less useful as time goes by.  Deleting this useless information from the database will save you some disk space.</p>
-
-<ul>
-	<li><strong>Delete orphan tags</strong></li>
-</ul>
-<ul>
-  <li><strong>Update albums informations:</strong> For each album, the following information is checked, and updated if necessary : list of parent albums, number of photos, last photo date, position among brother albums, position among all albums. This action also checks the representative photos consistency.</li>
-  <li><strong>Update photos information:</strong> For each photo, information updated is : full path to file, average rate. <em>Warning</em>, do not mix up: metadata information must be synchronised from <span class="pwgScreen">Administration &raquo; Tools &raquo; synchronise</span>, or on the modification screen of a single photo (through <span class="pwgScreen">Photo</span> for example).</li>
-</ul>
-<ul>
-  <li><strong>Repair and optimise the database:</strong>Perform re-order, repair and optimise operations on each table of the database.</li>
-  <li><strong>Reinitialize integrity check</strong></li>
-</ul>
+<p>일부 정보는 시간이 지날수록 유용성이 떨어집니다. 데이터베이스에서 이 쓸모 없는 정보를 삭제하면 디스크 공간이 절약됩니다.</p>
 
 <ul>
-  <li><strong>Purge history details:</strong> Delete all lines from the history table. Screen <span class="pwgScreen">Administration &raquo; Tools &raquo; History</span> will not longer show information for the past history. <em>Warning:</em> all data will be lost, without any way to get them back.</li>
-  <li><strong>Purge history summary:</strong> Delete all the summary information about visit history. This summary is calculated from the history details.</li>
-  <li><strong>Purge sessions:</strong> Delete expired user sessions.</li>
-  <li><strong>Purge never used notification feeds</strong></li>
-  <li><strong>Purge searches history</strong></li>
-  <li><strong>Purge compiled templates</strong></li>  
+	<li><strong>이용하지 않는 태그 삭제</strong></li>
 </ul>
+<ul>
+  <li><strong>앨범정보 업데이트:</strong> 각 앨범에 대해 다음 정보를 확인하고 필요한 경우 업데이트합니다: 상위 앨범 목록, 사진 수, 마지막 사진 날짜, 형제 앨범 중 위치, 모든 앨범 중 위치. 이 작업은 대표적인 사진 일관성도 확인합니다.</li>
+  <li><strong>사진정보 업데이트:</strong> 각 사진에 대해 업데이트된 정보는 전체 파일 경로, 평균 속도입니다. <em>경고</em>, 혼동하지 마십시오, 메타 데이터 정보는  <span class="pwgScreen">관리자 &raquo; 도구 &raquo; 동기화</span>에서 동기화되어야 합니다, 또는 단일 사진의 수정 화면에 나타납니다. ( <span class="pwgScreen">사진</span> 예시를 통하여).</li>
+</ul>
+<ul>
+  <li><strong>데이터베이스 복구와 최적화:</strong>데이터베이스의 각 테이블에서 재주문, 복구 및 최적화 작업을 수행합니다.</li>
+  <li><strong>무결성 검사 초기화</strong></li>
+</ul>
+
+<ul>
+  <li><strong>히스토리 상세내역 삭제:</strong> 기록 테이블에서 모든 줄을 삭제합니다.  화면 <span class="pwgScreen">관리자 &raquo;도구 &raquo; 히스토리</span>은 더 이상 과거 내역에 대한 정보를 표시하지 않습니다. <em>경고:</em> 데이터를 복구할 방법이 없이 모든 데이터가 손실됩니다.</li>
+  <li><strong>히스토리 요악 삭제:</strong> 방문 내역에 대한 모든 요약 정보를 삭제합니다. 이 요약은 히스토리 상세 내역에서 계산됩니다.</li>
+  <li><strong>세션 삭제:</strong> 만료된 사용자 세션을 삭제합니다.</li>
+  <li><strong>사용되지 않은 알림 피드 기록 세부 정보 삭제</strong></li>
+  <li><strong>검색기록 삭제</strong></li>
+  <li><strong>컴파일 템플릿 삭제 </strong></li>
