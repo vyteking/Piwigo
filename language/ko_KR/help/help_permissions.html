@@ -1,57 +1,55 @@
 <fieldset>
-<legend>Permissions on albums</legend>
+<legend>앨범에 대한 사용 권한</legend>
 
-<p>If privacy levels do not fit your needs, you can also manage permissions on albums for a user or a group. You can manage permissions on photos and albums at the same time, without conflict.</p>
+<p>개인 정보 수준이 사용자의 필요에 맞지 않는 경우 사용자 또는 그룹의 앨범에 대한 사용 권한도 관리할 수 있습니다. 사진 및 앨범에 대한 사용 권한을 충돌 없이 동시에 관리할 수 있습니다.</p>
 
-<p>You can forbid access to albums. Switch the album access type to
-"private" if you want to manage permissions.</p>
+<p>앨범에 대한 접근을 금지할 수 있습니다.
+   권한을 관리하려면 앨범 액세스 유형을 "개인"으로 전환하십시오.</p>
 
-<p>You can set a album to private by editing a single album
-(<span class="pwgScreen">Administration &raquo; Albums &raquo; Manage
-&raquo; edit</span>) or by setting options to your whole album tree
-(<span class="pwgScreen">Administration &raquo; Albums &raquo;
-Properties &raquo; Public / Private</span>).</p>
+<p>싱글 앨범을 수정하며 앨범을 비공개 설정할 수 있습니다.
+(<span class="pwgScreen">관리자 &raquo; 앨범 &raquo;관리
+&raquo; 수정</span>) 또는 당신의 전체 앨범 트리의 설정을 구성함으로써
+(<span class="pwgScreen">관리자 &raquo; 앨범 &raquo;
+특성 &raquo; 공개 / 비공개</span>).</p>
 
-<p>Once the album is private, you can manage permissions for groups and
-users with 3 screens:</p>
+<p>앨범이 비공개이면 3개의 화면으로 그룹 및 사용자에 대한 권한을 관리할 수 있습니다.:</p>
 
 <ul>
 
-  <li><span class="pwgScreen">Administration &raquo; Users &raquo; Manage &raquo;
-  permissions action</span> (one link per user)</li>
+  <li><span class="pwgScreen"관리자 &raquo; 사용자 &raquo; 관리 &raquo;
+  허가 조치</span> (사용자 당 하나의 링크)</li>
 
-  <li><span class="pwgScreen">Administration &raquo; Users &raquo; Groups &raquo;
-  permissions action</span> (one link per group)</li>
+  <li><span class="pwgScreen">관리자 &raquo; 사용자 &raquo; 그룹 &raquo;
+  허가 조치</span> (그룹 당 하나의 링크)</li>
 
-  <li><span class="pwgScreen">Administration &raquo; Albums &raquo; Manage &raquo; edit
-  album permissions action</span> (one link per album)</li>
+  <li><span class="pwgScreen">관리자 &raquo;앨범&raquo; 관리 &raquo; 앨범에 대한 허가 조치 수정</span> (앨범 당 하나의 링크)</li>
 
 </ul>
 </fieldset>
 
 <fieldset>
-<legend>Permissions on photos</legend>
+<legend>사진에 대한 사용 권한</legend>
 
-<p>Each photo has a <strong>privacy level</strong> (a lock). Each user also has a privacy level (a key). There are 5 privacy levels:</p>
+<p>각 사진은 <strong>비공개 수준</strong> (잠금)을 가집니다. 각 사용자는 비공개 단계를 가지고 있습니다(키). 5개의 비공개 단계가 있습니다.:</p>
 <ol>
-  <li>None</li>
-  <li><em>Contacts</em></li>
-  <li><em>Friends (which is higher than a contact)</em></li>
-  <li><em>Family (which is higher than a friend)</em></li>
-  <li><em>Admins (which is higher than any other level)</em></li>
+  <li>없음</li>
+  <li><em>접촉</em></li>
+  <li><em>친구 (접촉보다 높음)</em></li>
+  <li><em>가족 (친구보다 높음)</em></li>
+  <li><em>관리자 (다른 수준보다 높음)</em></li>
 </ol>
 
-<p>Higher levels have permissions on lower levels. For a given user, the higher the privacy level, the more photos he can see.</p>
+<p>상위 수준에는 하위 수준에 대한 사용 권한이 있습니다. 특정 사용자의 경우 개인 정보 수준이 높을수록 더 많은 사진을 볼 수 있습니다.</p>
 
-<p>For example, if photo "peter_wedding-0024.jpg" has <em>"Family"</em> privacy level, then:</p>
+<p>예를 들어, 만약 "peter_wedding-0024.jpg" 가 <em>"가족"</em> 비공개 수준을 가진다면, 그러면:</p>
 <ul>
-  <li>Peter (who is an <em>"Admin"</em>) will see the photo because <em>"Admins"</em> can see all photos</li>
-  <li>Beth (who is a <em>"Family"</em> member) will also see the photo</li>
-  <li>Mary (who is just a <em>"Friend"</em>) won't see the photo</li>
+  <li>피터 ( <em>"관리자"</em>) 그 사진을 볼 것입니다. <em>"관리자"</em> 는 모든 사진을 볼 수 있습니다.</li>
+  <li>베스 ( <em>"가족"</em> 구성원) 또한 그 사진을 볼 것입니다.</li>
+  <li>매리 (그저 <em>"친구"</em>) 그 사진을 보지 못합니다.</li>
 </ul>
 
-<p>A user that has no permission to see the content of a album won't see the album itself, not even its title. The same principle applies to a tag.</p>
+<p>앨범의 내용을 볼 권한이 없는 사용자는 앨범 제목도 볼 수 없습니다. 태그에도 동일한 원칙이 적용됩니다..</p>
 
-<p>You can set the privacy level of a user on <span class="pwgScreen">Administration &raquo; Users &raquo; Manage</span> screen.</p>
+<p>사용자의 개인 정보 수준을 설정할 수 있습니다. <span class="pwgScreen">관리자 &raquo; 사용자 &raquo; 관리</span> 화면.</p>
 
 </fieldset>
