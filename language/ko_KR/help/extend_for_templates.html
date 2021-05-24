@@ -1,20 +1,20 @@
-<h2>Template Extension Configuration</h2>
+<h2>양식확장환경설정</h2>
 
-<h3>About</h3>
-<p>Your Piwigo gallery can be customised by replacing existing template files with customised versions.  For example, the default header template (header.tpl) can be replaced by a customised header template (my-header.tpl).  After submitting the changes to the database the gallery will display the customised header instead of the original header.<br>
+<h3>설명</h3>
+<p>피위고전시대는 존재하는 양식파일과 수정판을 대체하여 꾸밀수 있습니다. 이를테면, 기본머리쪽양식(header.tpl)은 꾸민 머리쪽양식(my-header.tpl)으로 바꿔칠수 있습니다.  바뀜을 데이터베이스에 제출하고는 전시대는 원래머리쪽을 대신해 꾸민 머리쪽을 표시합니다. <br>
 Template extensions are a powerful way to create customised themes for both new and advanced users.  Used together with the LocalFiles Editor you can create your own child themes.</p>
 
-<h3>Original Template</h3>
-<p>A theme contains a number of template files that make up the gallery pages.  These are the original templates.</p>
+<h3>원래양식</h3>
+<p>수많은A theme contains a number of template files that make up the gallery pages. 이들이 원래양식입니다.</p>
 
-<h3>Optional URL Keyword</h3>
-<p>These are words found in the gallery URL after the module name.  They can also be active permalinks  (See the permalink documentation for more information).  <a href="#warnings">WARNING:</a> if the same original template and same keyword is used on more than one customised template only the last one is active.</p>
+<h3>선택적URL핵심낱말</h3>
+<p>이 낱말들은 모듈이름뒤에 전시대접속주소에 찾아집니다. 활동적페르마링크가 되기도 합니다 (페르마링크문서를 참조하세요). <a href="#warnings">경고:</a> 똑같은 원래양식과 똑같은 핵심낱말이 한 꾸민 양식보다 많이 쓰인다면 마지막하나만이 활성화됩니다. </p>
 
-<h3>Bound Theme</h3>
-<p>The bound theme is the theme from which the template files are being replaced.</p>
+<h3>바운드주제</h3>
+<p>바운드주제는, 양식파일이 바꿔쳐질 주제입니다.</p>
 
-<h3>Where are the original templates?</h3>
-<p>Original templates are the template files shipped with each theme.  These are saved in <em>/themes/default/template</em> (or <em>themes/<theme name>/template</em>).  These template files should not be edited in place as changes will be lost with theme upgrades.<br>
+<h3>원래양식을 어디인가요? </h3>
+<p>원래양식은 각주제와 함께 나르는 양식파일입니다. 이들은 <em>/themes/default/template</em> (또는 <em>themes/<theme name>/template</em>)에다 저장됩니다.  These template files should not be edited in place as changes will be lost with theme upgrades.<br>
 Supported original templates include:</p>
 <ul>
   <li><span class="filename">index.tpl</span></li>
@@ -30,11 +30,11 @@ Supported original templates include:</p>
   <li><span class="filename">popuphelp.tpl</span></li>
   <li><span class="filename">search.tpl</span> and/or <span class="filename">search_rules.tpl</span></li>
   <li><span class="filename">nbm.tpl</span> and/or <span class="filename">notification.tpl</span></li>
-  <li><span class="filename">identification.tpl</span> and/or <span class="filename">register.tpl</span></li>
+  <li><span class="filename">identification.tpl</span> 또는 <span class="filename">register.tpl</span></li>
   <li><span class="filename">redirect.tpl</span></li>
 </ul>
-<h3>Saving customised templates</h3>
-<p>Customised templates should be saved in the template-extension folder or subfolders.  For example, <em>/template-extension/my-default/header.tpl</em> (or <em>/template-extension/<my-theme-name>/header.tpl</em>)  Template files can have any name with a .tpl extension.  The template files in subfolders appear in the Template configuration screen as available custom templates.</p>
+<h3>꾸민 양식 저장</h3>
+<p>꾸민 양식은 양식확장폴더나 아래폴더에다 저장되어야합니다.  요컨대, <em>/template-extension/my-default/header.tpl</em> (또는 <em>/template-extension/<my-theme-name>/header.tpl</em>) 양식파일은 .tpl확장자앞에 이름붙일수 있습니다.  The template files in subfolders appear in the Template configuration screen as available custom templates.</p>
 <h3>Activating customised templates</h3>
 <p>Select the original template to replace.  Optionally choose a URL keyword to ensure that the customised template is only shown on pages with that keyword.  Select a bound theme and the changes will be effective on that theme.  Submit the changes to the database.</p>
 <h3>Deactivating customised templates</h3>
@@ -42,9 +42,9 @@ Supported original templates include:</p>
 Delete the customised template files from the template-extension folder.</p>
 
 <a name="warnings"></a>
-<h3>Warnings</h3>
+<h3>경고</h3>
 <ul>
-  <li><strong>The original template</strong> must be the original template otherwise you may have unpredictable results.</li>
+  <li><strong>원래양식</strong>은 예기치못한 결과를 가져오지않는 이상, 원래양식이여야합니다. </li>
   <li>If the same original template and same URL keyword is used on more than one customised template only the last one is active.</li>
   <li>Distributed sample template files are for test purposes only.  Do not edit them.  Create your own ones or copy existing theme template files into <em>/template-extension/<my-theme>/</em></li>
   <li>When the customised template is deleted the original template file is immediately reactivated.</li>
