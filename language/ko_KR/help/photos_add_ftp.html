@@ -1,29 +1,29 @@
 <fieldset>
-  <legend>Quick Start</legend>
+  <legend>빠른 시작</legend>
 
 <ol>
-  <li>Create a directory on your computer.</li>  
+  <li>컴퓨터에 디렉토리 만들기.</li>  
 
-  <li>Copy some photos inside this directory, resize them for web display. <em>Warning</em>: the name of directories and files must contain only letters, figures, "-", "_" or ".". No blank space, nor accentuated characters.</li>
+  <li>이 디렉토리에 일부 사진을 복사하고 웹 표시를 위해 크기 조정. <em>경고</em>: 디렉토리 및 파일 이름은 문자만 포함 해야 합니다., 숫자, "-", "_"또는 ".". 공백이나 악센트 부호가있는 문자 안됌.</li>
 
-  <li>With a FTP client, copy your directory in the "galleries" directory of your Piwigo installation.</li>
+  <li>FTP 클라이언트를 사용하여 Piwigo 설치파일의 "갤러리" 디렉터리에 당신의 디렉터리를 복사합니다.</li>
 
-  <li>Logon your gallery and go to <span class="pwgScreen">Administration</span> and click on the big Synchronization button.</li>
+  <li>갤러리에 로그온하고 <span class = "pwgScreen"> 관리 </ span>로 이동합니다 그리고 큰 동기화 버튼을 클릭합니다.</li>
 </ol>
 
-<p>Congratulations! You have successfully created the first album of your photo gallery.</p>
+<p>축하합니다! 사진 갤러리의 첫 번째 앨범을 성공적으로 만들었습니다.</p>
 </fieldset>
 
 <fieldset>
-  <legend>Directories and files organization</legend>
+  <legend>디렉터리 및 파일 구성</legend>
 
 <ul>
 
   <li>
 
-    <p>Album directories are in the Piwigo directory
-    "galleries". Here follows the directory tree of a very small gallery (but
-    using many features):</p>
+    <p>앨범 디렉토리는 Piwigo의 "갤러리" 디렉토리에 있습니다.
+    다음은 아주 작은 갤러리의 디렉토리 트리입니다. (그러나
+    많은 기능 사용):</p>
 
     <pre>
 galleries
@@ -56,25 +56,22 @@ galleries
 
   </li>
 
-  <li>Except for "pwg_representative" and "pwg_format" (see explanations below), each directory under "galleries" produces a album. There is no limit on deepness.</li>
+  <li>"pwg_representative"및 "pwg_format"(아래 설명 참조)을 제외하고 아래의 각 "갤러리" 디렉토리는 앨범을 생성합니다. 깊이에 제한이 없습니다.</li>
 
-  <li>Basically, an element is represented by a file. A file can be a
+  <li>기본적으로, 요소는 파일로 표시됩니다. A file can be a
   Piwigo element if its extension is among <code>file_ext</code>
   configuration parameter possibilities (see <span
   class="filename">include/config_default.inc.php</span> file). A file can
   be a picture if its extension is among <code>picture_ext</code>
   configuration parameter possibilities.</li>
 
-  <li>Non photo elements (video, sounds, file texts, whatever you want...) are represented by default by an icon corresponding to the filename
-  extension. Optionally, you can associate a thumbnail and a representative
-  file (see video.avi in the example above).</li>
+  <li>사진이 아닌 요소 (비디오, 사운드, 파일 텍스트 등 원하는 항목 ...)는 기본적으로 파일 이름 확장자에 해당하는 아이콘으로 표시됩니다. 선택적으로 썸네일과 대표 파일을 연결할 수 있습니다. (위 예제의 video.avi 참조)</li>
 
-  <li>Multiple formats: a photo can be available in several formats. In this example, we have 3 additional formats for img0001.jpg. You can activate this feature with <code>$conf['enable_formats'] = true;</code> in your local configuration and define a list of formats, like <code>$conf['format_ext'] = array('cmyk.jpg', 'cr2', 'zip');</code></li>
+  <li>여러 형식 : 사진은 여러 형식으로 제공 될 수 있습니다. 이 예를 보면 img0001.jpgfmf에 대해 3 개의 추가 형식이 있습니다.로컬 구성에서 <code> $ conf [ 'enable_formats'] = true; </ code>를 사용하여이 기능을 활성화하고 <code> $ conf [ 'format_ext'] = array ( 'cmykjpg ','cr2 ','zip '); </ code> </ li>와 같은 형식 목록을 정의 할 수 있습니다. 
 
-  <li><em>Warning</em>: the name of directories and files must contain only letters, figures, "-", "_" or ".". No blank space, nor accentuated characters.</li>
+  <li><em>경고</em>: 디렉토리 및 파일 이름에는 문자, 숫자, "-", "_"또는 "."만 포함되어야합니다. 공백이나 악센트 부호가있는 문자는 사용 할 수 없습니다</li>
 
-  <li>Once photos are correctly placed in the
-  directories, go to: <span class="pwgScreen">Administration &raquo; Tools &raquo;
+  <li>사진이 디렉토리에 올바르게 배치되면, go to: <span class="pwgScreen">Administration &raquo; Tools &raquo;
   Synchronize</span></li>
 
 </ul>
