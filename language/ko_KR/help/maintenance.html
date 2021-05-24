@@ -1,26 +1,26 @@
-<h2>Maintenance</h2>
+<h2>유지</h2>
 
-<p>To optimise page generation time Piwigo uses cached information. For example, instead of counting the number of photos contained in each album at each page reload this information is stored in the database. In theory this information should always be correct but sometimes an error can occur and cached information becomes out of date.</p>
+<p>피위고는 페이지생성시간을 최적화하는데 캐쉬정보를 씁니다. 요컨대, 사진첩마다의 페이지에 들어간 사진수를 세는 대신에, 이 정보가 데이터베이스에 갈무리됩니다. 이론적으로, 이 정보는 언제나 알맞아야하나, 가끔 오류가 일어나고, 임시저장된 정보의 날짜가 지나버립니다.</p>
 
-<p>Some information becomes less useful as time goes by.  Deleting this useless information from the database will save you some disk space.</p>
+<p>어떤 정보는 시간지나며 쓸모없어집니다. 이 쓸모없는 자료를 데이터베이스에서 삭제하면, 저장공간이 확보됩니다. </p>
 
 <ul>
-	<li><strong>Delete orphan tags</strong></li>
+	<li><strong>버려진 꼬리표 지우기</strong></li>
 </ul>
 <ul>
-  <li><strong>Update albums informations:</strong> For each album, the following information is checked, and updated if necessary : list of parent albums, number of photos, last photo date, position among brother albums, position among all albums. This action also checks the representative photos consistency.</li>
-  <li><strong>Update photos information:</strong> For each photo, information updated is : full path to file, average rate. <em>Warning</em>, do not mix up: metadata information must be synchronised from <span class="pwgScreen">Administration &raquo; Tools &raquo; synchronise</span>, or on the modification screen of a single photo (through <span class="pwgScreen">Photo</span> for example).</li>
+  <li><strong>사진첩정보갱신:</strong> 사진첩마다, 상위사진첩, 사진개수, 마지막사진날짜, 하위사진첩사이위치, 모든 사진첩가운데위치의 정보가 확인되며, 필요하다면 갱신됩니다. 이 행동은 대표적인 사진지속성을 확인합니다. </li>
+  <li><strong>사진정보갱신:</strong> 사진마다 갱신되는 정보로, 파일로의 온전한 경로, 평균비률이 있습니다. <em>경고</em>, 섞지말것: 구조화자료정보는 반드시 <span class="pwgScreen">관리자 &raquo; 도구 &raquo; 동기화</span>, 또는 하나의 사진의 수정화면 (요컨대 <span class="pwgScreen">사진</span>을 거쳐)에서 동기화되어야합니다. </li>
 </ul>
 <ul>
-  <li><strong>Repair and optimise the database:</strong>Perform re-order, repair and optimise operations on each table of the database.</li>
-  <li><strong>Reinitialize integrity check</strong></li>
+  <li><strong>데이터베이스수리 및 최적화:</strong>재정렬, 수리, 최적화기능을 데이터베이스의 테이블마다 수행합니다. </li>
+  <li><strong>무결성검사재초기화</strong></li>
 </ul>
 
 <ul>
-  <li><strong>Purge history details:</strong> Delete all lines from the history table. Screen <span class="pwgScreen">Administration &raquo; Tools &raquo; History</span> will not longer show information for the past history. <em>Warning:</em> all data will be lost, without any way to get them back.</li>
-  <li><strong>Purge history summary:</strong> Delete all the summary information about visit history. This summary is calculated from the history details.</li>
-  <li><strong>Purge sessions:</strong> Delete expired user sessions.</li>
-  <li><strong>Purge never used notification feeds</strong></li>
-  <li><strong>Purge searches history</strong></li>
-  <li><strong>Purge compiled templates</strong></li>  
+  <li><strong>상세이력정리:</strong> 이력테블서 모든 줄을 지웁니다. <span class="pwgScreen">관리자 &raquo; 도구 &raquo; 이력</span>화면은 더는 지난 이력의 정보를 보이지않습니다. <em>경고:</em> 모든 자료는 되돌릴 여지없이 사라져버립니다.</li>
+  <li><strong>이력간추림정리:</strong> 방문이력추림정보를 모두 지워버립니다. 이 추림은 이력상세로부터 계산됩니다. </li>
+  <li><strong>사용시간정리:</strong> 지나버린 사용자사용시간을 지워버립니다. </li>
+  <li><strong>아예 쓰지않은 공지제공 정리</strong></li>
+  <li><strong>검색이력정리</strong></li>
+  <li><strong>번역된 양식 정리</strong></li>  
 </ul>
