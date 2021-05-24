@@ -1,22 +1,22 @@
-<h2>Search</h2>
+<h2>검색</h2>
 
-<p>By default all searched terms must match. Searches are case-insensitive.</p>
+<p>By기본적으로 모든 검색어가 일치해야합니다.검색은 대소 문자를 구분하지 않습니다.</p>
 
 <table class="qsearch_help_table">
 <tr>
-<td>quoted phrase<br>
+<td>인용구<br>
 <q>"search"</q>
 </td>
-<td>Use quotes to search for an exact word or phrase.<br>
+<td>따옴표를 사용하여 정확한 단어나 구를 검색.<br>
 <q>"george washington"</q></td>
 </tr>
 
 
 <tr>
-<td>either term<br>
+<td>어느 용어<br>
 <q>OR search</q><br>
 </td>
-<td>Add an OR between words.<br>
+<td단어 사이에 OR 추가.<br>
 <q>john OR bill</q></td>
 </tr>
 
@@ -26,7 +26,7 @@
 <q>NOT search</q><br>
 <q>-search</q>
 </td>
-<td>Add a dash (-) or NOT before a word to exclude from search. Note that NOT acts as a filtering operator so you cannot have a search containing only NOT operators. You cannot combine OR with NOT (<q>john OR NOT bill</q> is not valid)<br>
+<td>검색에서 제외 할 단어 앞에 대시 (-) 또는 NOT 추가. NOT은 필터링 연산자 역할을하므로 NOT 연산자 만 포함 된 검색을 할 수 없습니다.OR와 NOT을 결합 할 수 없습니다. (<q>john OR NOT bill</q> is not valid)<br>
 <q>george washington NOT bush</q></td>
 </tr>
 
@@ -48,7 +48,7 @@
 <td><q>tag:</q><br>
 <q>tags:</q>
 </td>
-<td>Searches only in tag names without looking at photo titles or descriptions.<br>
+<td>사진 제목이나 설명을 보지 않고 태그 이름 만 검색합니다.<br>
 <q>tag:john</q>, <q>tag:(john OR bill)</q></td>
 </tr>
 
@@ -56,21 +56,21 @@
 <td><q>photo:</q><br>
 <q>photos:</q>
 </td>
-<td>Searches only for photos with the given words in title or description.<br>
+<td>제목이나 설명에 주어진 단어가 있는 사진만 검색합니다.<br>
 <q>photo:John</q></td>
 </tr>
 
 <tr>
 <td><q>file:</q>
 </td>
-<td>Searches by file name.<br>
+<td>파일 이름으로 검색.<br>
 <q>file:DSC_</q></td>
 </tr>
 
 <tr>
 <td><q>author:</q>
 </td>
-<td>Searches by author.<br>
+<td>저자별 검색.<br>
 <q>author:John</q></td>
 </tr>
 
@@ -79,7 +79,7 @@
 <q>taken:</q>
 <q>shot:</q>
 </td>
-<td>Searches photos by taken date.<br>
+<td>촬영 한 날짜로 사진 검색.<br>
 <q>taken:2003</q> photos taken in 2003<br>
 <q>taken:20035</q>,<q>taken:2003-5</q>,<q>taken:2003-05</q> photos from may 2003<br>
 <q>taken:2003..2008</q> photos from 2003 to 2008<br>
@@ -90,28 +90,28 @@
 <tr>
 <td><q>posted:</q>
 </td>
-<td>Searches photos by posted date.</td>
+<td>게시 된 날짜로 사진 검색.</td>
 </tr>
 
 <tr>
 <td><q>width:</q><br>
 <q>height:</q>
 </td>
-<td>Searches photos with a given width or height.</td>
+<td>주어진 너비 또는 높이로 사진을 검색합니다.</td>
 </tr>
 <tr>
 <td><q>size:</q>
 </td>
-<td>Searches photos by size in pixels<br>
-<q>size:5m</q> returns photos of 5 megapixels<br>
-<q>size:>12m</q> returns photos of 12 megapixels or more<br></td>
+<td>픽셀 단위의 크기로 사진 검색<br>
+<q>size:5m</q> 5 메가 픽셀의 사진을 반환합니다<br>
+<q>size:>12m</q> 12 메가 픽셀 이상의 사진을 반환합니다.<br></td>
 </tr>
 <tr>
 <td><q>ratio:</q>
 </td>
-<td>Searches photos by width/height ratio.<br>
-<q>ratio:3/4 OR ratio:4/3</q> finds photos from compact cameras in portrait or landscape modes
-<q>ratio:>16/9</q> finds panoramas
+<td>가로 / 세로 비율로 사진 검색.<br>
+<q>ratio:3/4 OR ratio:4/3</q> 세로 또는 가로 모드의 컴팩트 카메라에서 사진을 찾습니다.
+<q>ratio:>16/9</q>파노라마를 찾습니다
 </td>
 </tr>
 <tr>
@@ -123,19 +123,19 @@
 <td><q>score:</q><br>
 <q>rating:</q>
 </td>
-<td>Hint: <q>score:*</q> will give you all photos with at least one vote. <q>score:</q> will give you photos without votes.</td>
+<td>Hint: <q>score:*</q> 최소한 한 번의 투표로 모든 사진을 제공합니다. <q>score:</q>투표없이 사진을 줄 것입니다.</td>
 </tr>
 <tr>
 <td><q>filesize:</q>
 </td>
-<td>Searches photos by file size<br>
-<q>filesize:1m..10m</q> finds files between 1MB and 10MB.</td>
+<td>파일 크기로 사진 검색<br>
+<q>filesize:1m..10m</q> 1MB에서 10MB 사이의 파일을 찾습니다.</td>
 </tr>
 <tr>
 <td><q>id:</q>
 </td>
-<td>Searches photos by its numeric identifier in Piwigo<br>
-<q>id:123..126</q> finds photo 123 to 126 (it may find between 0 and 4 photos, because photos can be deleted).</td>
+<td>Piwigo에서 숫자 식별자로 사진을 검색합니다.<br>
+<q>id:123..126</q> 사진 123 ~ 126을 찾습니다 (사진을 삭제할 수 있으므로 0 ~ 4 개의 사진을 찾을 수 있음).</td>
 </tr>
 
 </table>
